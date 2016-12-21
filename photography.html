@@ -1,2 +1,52 @@
-I like to take pictures for fun using my cell phone camera.
-Here's some of the good ones.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>photography</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../highslide-4.1.9/highslide/highslide-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="../highslide-4.1.9/highslide/highslide.css" />
+    <script type="text/javascript">
+        //<![CDATA[
+        hs.graphicsDir = '../highslide-4.1.9/highslide/graphics/';
+        hs.wrapperClassName = 'wide-border';
+        //]]>
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        function toggle_more(objID) {
+            if (!document.getElementById) return;
+            var ob = document.getElementById(objID).style;
+            ob.display = (ob.display == 'block')?'none':'block';
+            var ob2 = document.getElementById('link:'+objID);
+            ob2.className = (ob2.className == 'open') ? 'closed' : 'open';
+        }
+        //]]>
+    </script>
+    <style type="text/css"> </style>
+
+</head>
+
+<body>
+  <div id="body">
+
+    <h1> photography </h1>
+
+    <a href="./images/AlpsBlueberry.jpg" class="highslide" rel="highslide">
+      <img src="./images/AlpsBlueberry.thumb.jpg" alt="./images/AlpsBlueberry" title="Alps Blueberry"/></a>
+    <div class="highslide-heading">
+      <a title="./images.AlpsBlueberry.jpg">AlpsBlueberry</a>&nbsp;[&nbsp;<a href="./images/AlpsBlueberry.jpg">jpg</a>&nbsp;|&nbsp;<a href="./images/AlpsBlueberry.jpg">jpg</a>&nbsp;]
+    </div>
+    <div class="highslide-caption">
+      <p>yummy blueberry in the French Alps</p>
+    </div>
+
+    <div class="foot">
+    <div class="user">prose</div>
+    <div class="date">Fri Jan 15 11:55:22 2016</div>
+    <div class="powered_by">produced with <a href="https://svnweb.cern.ch/trac/penn/browser/reece/rel/root2html/trunk/root2html.py">root2html.py</a></div>
+    <div class="valid"><a href="http://validator.w3.org/check?uri=referer">valid xhtml</a></div>
+</div>
+</body>
+</html>
+
