@@ -1,3 +1,5 @@
+import os
+
 thumb_height = 120
 #______________________________________________________________________________
 def convert_eps_to_gif(eps):
@@ -44,3 +46,17 @@ def convert_jpg_to_thumb_jpg(jpg):
     name = jpg[:-3] + 'thumb.jpg'
     os.system('convert -resize x%i -antialias -colors 64 -format jpg %s %s' % (thumb_height, jpg, name) )
     return name
+
+def convert_all():
+    files = commands.getoutput('ls .')
+    files = files.split('\n')
+    for iFile in files:
+        if 'convert_images' in iFile: continue
+        if not 'jpg' in iFile:
+            print 'WARNING:', iFile, 'not a JPG file. Skipping.'
+            continue
+        if 'thumb' in iFile: continue
+
+        convert_jpg_to_thumb_jpg(iFile)
+        
+convert_all()
