@@ -1,129 +1,822 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>photography</title>
+    <title>photography</title>
 
-<!--
+    <!--
 	1 ) Reference to the files containing the JavaScript and CSS.
 	These files must be located on your server.
--->
+      -->
 
-<script type="text/javascript" src="./highslide-4.1.9/highslide/highslide-with-gallery.js"></script>
-<link rel="stylesheet" type="text/css" href="./highslide-4.1.9/highslide/highslide.css" />
+    <script type="text/javascript" src="./highslide-4.1.9/highslide/highslide-with-gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./highslide-4.1.9/highslide/highslide.css" />
 
-<!--
+    <!--
 	2) Optionally override the settings defined at the top
 	of the highslide.js file. The parameter hs.graphicsDir is important!
--->
-
-<script type="text/javascript">
-  hs.graphicsDir = './highslide-4.1.9/highslide/graphics/';
-  hs.align = 'center';
-  hs.transitions = ['expand', 'crossfade'];
-  hs.wrapperClassName = 'dark borderless floating-caption';
-  hs.fadeInOut = true;
-  hs.dimmingOpacity = 0.75;
-
-  // Add the controlbar
-  if (hs.addSlideshow) hs.addSlideshow( {
-  //slideshowGroup: 'group1',
-  interval: 5000,
-  repeat: false,
-  useControls: true,
-  fixedControls: 'fit',
-  overlayOptions: {
-  opacity: .6,
-  position: 'bottom center',
-  hideOnMouseOut: true
-  }
-  });
-</script>
-
-</head>
-
-<body>
-
-  <!--
-      3) Put the thumbnails inside a div for styling
-    -->
-
-  <div class="highslide-gallery">
-    
-    <!--
-	4) This is how you mark up the thumbnail image with an anchor tag around it.
-	The anchor's href attribute defines the URL of the full-size image
       -->
-    <a href="./images/AlpsBlueberry.jpg" class="highslide" onclick="return hs.expand(this)">
-      <img src="./images/AlpsBlueberry.thumb.jpg" alt="Highslide JS"
-	   title="Click to enlarge" />
-    </a>
-    
-    <!--
-	5 (options). This is how you mark up the caption.  The correct class name is important.
+
+    <script type="text/javascript">
+      hs.graphicsDir = './highslide-4.1.9/highslide/graphics/';
+      hs.align = 'center';
+      hs.transitions = ['expand', 'crossfade'];
+      hs.wrapperClassName = 'dark borderless floating-caption';
+      hs.fadeInOut = true;
+      hs.dimmingOpacity = 0.75;
+
+      // Add the controlbar
+      if (hs.addSlideshow) hs.addSlideshow( {
+      //slideshowGroup: 'group1',
+      interval: 5000,
+      repeat: false,
+      useControls: true,
+      fixedControls: 'fit',
+      overlayOptions: {
+      opacity: .6,
+      position: 'bottom center',
+      hideOnMouseOut: true
+      }
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <!--                                                                                                                                                
+        3) Put the thumbnails inside a div for styling                                                                                                  
       -->
-    <div class="highslide-caption">
-      yummy blueberry in the French Alps
-    </div>
 
-  </div>
-</body>
+    <div class="highslide-gallery">
+
+      <!--                                                                                                                                              
+          4) This is how you mark up the thumbnail image with an anchor tag around it.                                                                  
+          The anchor's href attribute defines the URL of the full-size image                                                                            
+        -->
+
+
+
+
+
+
+
+      <a href="./images/AlpsBlueberry.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/alpsblueberry.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/alpinelake.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/alpinelake.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/arborflower.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/arborflower.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/autumncoloredwedding.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/autumncoloredwedding.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/bikeroute.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/bikeroute.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/bikeshuttleflower.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/bikeshuttleflower.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/birdybeach.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/birdybeach.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/bixbycliffs.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/bixbycliffs.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/blueberry.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/blueberry.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/blueflower.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/blueflower.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/blueflower2.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/blueflower2.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/blueflowers.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/blueflowers.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/brokentree.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/brokentree.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/burningsunset.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/burningsunset.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/channelsunset1.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/channelsunset1.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/channelsunset2.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/channelsunset2.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/cherrytree.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/cherrytree.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/classicscene.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/classicscene.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/earlymorningtree.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/earlymorningtree.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/evian.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/evian.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/fabric.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/fabric.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/favoritetree.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/favoritetree.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/fbc.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/fbc.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/frenchtown.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/frenchtown.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/glacierlake.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/glacierlake.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/glowingferns.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/glowingferns.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/glowinglighthouse.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/glowinglighthouse.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/heavenjumps.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/heavenjumps.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/insideflower.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/insideflower.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/islandfox.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/islandfox.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/israel.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/israel.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/italylake.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/italylake.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/its-sunset.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/its-sunset.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/itsbeach.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/itsbeach.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/jellyglass.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/jellyglass.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/laclehman.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/laclehman.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/laclehman2.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/laclehman2.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/leavingvirginie.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/leavingvirginie.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/lereculet.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/lereculet.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/lesgets.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/lesgets.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/lightflowers.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/lightflowers.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/longboardlineup.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/longboardlineup.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/lostcoast.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/lostcoast.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/lostcoastbloom.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/lostcoastbloom.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/manypetal.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/manypetal.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/mitchellsmindsurf.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/mitchellsmindsurf.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/mountains.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/mountains.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/naturalbridgesblackandwhite.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/naturalbridgesblackandwhite.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/naturalbridgessunset.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/naturalbridgessunset.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/pbsciflower.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/pbsciflower.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/poppies.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/poppies.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/powdertracks.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/powdertracks.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/prettyivy.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/prettyivy.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/rooftopsunset.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/rooftopsunset.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/santamonica.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/santamonica.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/scsunet.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/scsunet.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/seflowers.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/seflowers.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/sestriere.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/sestriere.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/shadytrees.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/shadytrees.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/snowbird.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/snowbird.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/stackingatthelane.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/stackingatthelane.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/starfish.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/starfish.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/stripedlighthouse.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/stripedlighthouse.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/succulent.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/succulent.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/sundayriver.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/sundayriver.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/sundayrivercliffs.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/sundayrivercliffs.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/sunflowers.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/sunflowers.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/sunsetcliffwave.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/sunsetcliffwave.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/thelighthouse.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/thelighthouse.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/thinkingblocks.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/thinkingblocks.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/thoiry.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/thoiry.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/tigerkitty.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/tigerkitty.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/trinityfault.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/trinityfault.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/trinitylake.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/trinitylake.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/trinitypeak.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/trinitypeak.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/trinitypeaking.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/trinitypeaking.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/trinityvalley.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/trinityvalley.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/vbsunrise.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/vbsunrise.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/waterfall.JPG" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/waterfall.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/weddingrainbow.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/weddingrainbow.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/westcliffsunset.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/westcliffsunset.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/windingyellowstone.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/windingyellowstone.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/wintermountain.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/wintermountain.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+
+      <a href="./images/wonderingblocks.jpg" class="highslide" onclick="return hs.expand(this)">
+        <img src="./images/wonderingblocks.thumb.jpg" alt="Highslide JS"
+             title="Click to enlarge" />
+      </a>
+
+      <div class="highslide-caption">
+        NEW CAPTION
+      </div>
+    </div>
+  </body>
 </html>
-
-
-
-
-<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>photography</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="./highslide-4.1.9/highslide/highslide-full.js"></script>
-    <link rel="stylesheet" type="text/css" href="./highslide-4.1.9/highslide/highslide.css" />
-    <script type="text/javascript">
-        //<![CDATA[
-        hs.graphicsDir = './highslide-4.1.9/highslide/graphics/';
-        hs.wrapperClassName = 'wide-border';
-        //]]>
-    </script>
-    <script type="text/javascript">
-        //<![CDATA[
-        function toggle_more(objID) {
-            if (!document.getElementById) return;
-            var ob = document.getElementById(objID).style;
-            ob.display = (ob.display == 'block')?'none':'block';
-            var ob2 = document.getElementById('link:'+objID);
-            ob2.className = (ob2.className == 'open') ? 'closed' : 'open';
-        }
-        //]]>
-    </script>
-    <style type="text/css"> </style>
-
-</head>
-
-<body>
-  <div id="body">
-
-    <h1> photography </h1>
-
-    <a href="./images/AlpsBlueberry.jpg" class="highslide" rel="highslide">
-      <img src="./images/AlpsBlueberry.thumb.jpg" alt="./images/AlpsBlueberry" title="Alps Blueberry"/></a>
-    <div class="highslide-heading">
-      <a title="./images.AlpsBlueberry.jpg">AlpsBlueberry</a>&nbsp;[&nbsp;<a href="./images/AlpsBlueberry.jpg">jpg</a>&nbsp;|&nbsp;<a href="./images/AlpsBlueberry.jpg">jpg</a>&nbsp;]
-    </div>
-    <div class="highslide-caption">
-      <p>yummy blueberry in the French Alps</p>
-    </div>
-
-    <div class="foot">
-    <div class="user">prose</div>
-    <div class="date">Fri Jan 15 11:55:22 2016</div>
-    <div class="powered_by">produced with <a href="https://svnweb.cern.ch/trac/penn/browser/reece/rel/root2html/trunk/root2html.py">root2html.py</a></div>
-    <div class="valid"><a href="http://validator.w3.org/check?uri=referer">valid xhtml</a></div>
-</div>
-</body>
-</html>
-
--->

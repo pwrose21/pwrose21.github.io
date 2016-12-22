@@ -52,7 +52,7 @@ def convert_all():
     files = files.split('\n')
     for iFile in files:
         if 'convert_images' in iFile: continue
-        if not 'jpg' in iFile:
+        if not 'jpg' in iFile.lower():
             print 'WARNING:', iFile, 'not a JPG file. Skipping.'
             continue
         if 'thumb' in iFile: continue
