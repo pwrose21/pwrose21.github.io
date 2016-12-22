@@ -1,6 +1,6 @@
 import os, commands
 
-thumb_height = 120
+thumb_height = 120.*2.5
 #______________________________________________________________________________
 def convert_eps_to_gif(eps):
     assert eps.endswith('.eps')
